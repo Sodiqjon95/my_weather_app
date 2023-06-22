@@ -64,7 +64,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: SafeArea(
         child: Stack(
           children: [
-            Lottie.asset("assets/lottie/windy-weather.json"),
+            Lottie.asset("assets/lottie/windy-weather.json",fit: BoxFit.cover,width: MediaQuery.of(context).size.width),
             Positioned(
                 child: Center(child: Lottie.asset("assets/lottie/93175-loading-lottie-animation.json")))
           ],
